@@ -33,7 +33,7 @@ if (!class_exists("demo_plugin_paths")) {
         }
 
         function on_admin_menu() {
-            add_options_page('Demo Paths Page', 'Demo Paths', 8, __FILE__ , array (&$this, 'paths_options'));
+            add_options_page('Demo Paths Page', 'Demo Paths', 'administrator', __FILE__ , array (&$this, 'paths_options'));
         }
 
         function paths_options() {
