@@ -2,7 +2,7 @@
 /*
  Plugin Name: Demo Plugin Paths
  Plugin URI: http://website-in-a-weekend.net/demo-plugins/demo-plugin-paths/
- Description: A brief description of the Plugin.
+ Description: Utility plugin for keeping track of paths and constants in WordPress plugin development.
  Version: 0.1
  Author: Dave Doolin
  Author URI: http://website-in-a-weekend.net/
