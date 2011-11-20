@@ -1,7 +1,30 @@
 <div class="wrap">
+
+<?php
+/**
+ * At some point, rewrite to lay out as a table:
+ * Name, value, doc link, source link.
+ * Have each set of functions as an array, then
+ * pass it to the table layout.
+ */
+?>
 	<h2>Demo Plugin Paths</h2>
 
-    Here is where the form would go if I actually had options.
+    <h3>WordPress Theme functions (<a href="http://core.trac.wordpress.org/browser/tags/3.2.1/wp-includes/theme.php">src</a>)</h3>
+    <p>For child theme</p>
+    <ol>
+      <li><?php echo 'get_stylesheet(): ' . get_stylesheet(); ?></li>
+      <li><?php echo 'get_stylesheet_uri(): ' . get_stylesheet_uri(); ?></li>
+      <li><?php echo 'get_theme_root_uri(): ' . get_theme_root_uri(); ?></li>
+      <li><?php echo 'get_stylesheet_directory(): ' . get_stylesheet_directory(); ?></li>
+      <li><?php echo 'get_stylesheet_directory_uri(): ' . get_stylesheet_directory_uri(); ?></li>
+    </ol>
+    <p>For parent theme</p>
+    <ol>
+      <li><?php echo 'get_template(): ' . get_template(); ?></li>
+      <li><?php echo 'get_template_directory(): ' . get_template_directory(); ?></li>
+      <li><?php echo 'get_template_directory_uri(): ' . get_template_directory_uri(); ?></li>
+    </ol>
 
     <h3>WordPress defined</h3>
     <ol>
@@ -10,6 +33,9 @@
 		<li><?php echo "WP_CONTENT_URL: ".WP_CONTENT_URL ?></li>
 		<li><?php echo "WP_PLUGIN_DIR: ".WP_PLUGIN_DIR ?></li>
 		<li><?php echo "WP_PLUGIN_URL: ".WP_PLUGIN_URL ?></li>
+    <li><?php echo "TEMPLATEPATH: ".TEMPLATEPATH ?></li>
+    <li><?php echo "STYLESHEETPATH: ".STYLESHEETPATH ?></li>
+    <li><?php echo "CHILDPATH: ".CHILDPATH ?></li>
     </ol>
 
     <h3>PHP defined</h3>
